@@ -1,0 +1,25 @@
+{
+  "name": "cadastros",
+  "version": "1.0.0",
+  "description": "Projeto Javascript utilizando banco de dados MySQL - DevPleno",
+  "main": "index.js",
+  "author": "Kaichiro Fukuda",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "EJS",
+    "MySQL"
+  ],
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.17.1"
+  }
+}
