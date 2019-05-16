@@ -1,0 +1,38 @@
+<% include ../partials/header.ejs %>
+
+<h1>Pessoas</h1>
+
+<p><a href="/pessoas/create">Nova pessoa</a></p>
+
+<table class="table table-striped table-hover table-bordered table-responsive">
+    <tr>
+        <th>#</th>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Ações</th>
+    </tr>
+    <% pessoas.map( (pessoa, index) => { %>
+        <tr>
+            <td><%= index %></td>
+            <td><%= pessoa.id %></td>
+            <td><%= pessoa.nome %></td>
+            <td>
+                <div class="btn-group" role="group" aria-label="...">
+                    <a 
+                        type="button" 
+                        class="btn btn-default"
+                        href="/pessoas/update/<%= pessoa.id %>"
+                    >Editar</a>
+                    <a 
+                        type="button" 
+                        class="btn btn-default" 
+                        href="/pessoas/delete/<%= pessoa.id %>"
+                        onClick="return confirm('Deseja realmente excluir o registro <%= pessoa.id %>-<%= pessoa.nome %>?')"
+                    >Excluir</a>
+                </div>            
+            </td>
+        </tr>
+    <% }) %>
+</table>
+
+<% include ../partials/footer.ejs %>
