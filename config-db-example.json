@@ -1,0 +1,7 @@
+{
+    "HOST": "IP ou nome do host",
+    "PORT": "portas do banco de dados",
+    "USER": "usuário de acesso ao banco de dados, regalmente root",
+    "PASSWORD": "senha do usuário de acesso ao banco de dados",
+    "DATABASE": "álias/nome da base de dados"
+}
