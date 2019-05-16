@@ -1,7 +1,7 @@
 const pessoas = require('../models/pessoas')
 
-const index = async (connection, req, res) => {
-    const results = await pessoas.findAll(connection)
+const index = async (db, req, res) => {
+    const results = await pessoas.findAll(db)
     res.render('pessoas/index', { pessoas: results })
 }
 
