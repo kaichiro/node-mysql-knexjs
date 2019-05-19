@@ -10,7 +10,7 @@ Projeto para estudos sobre utilização do NodeJS com MySQL, persistênciacom Kn
 * Clone este projeto
 
 ```sh
-$ git clone https://github.com/kaichiro/node-mysql-only-sql.git
+$ git clone https://github.com/kaichiro/node-mysql-knexjs.git
 ```
 
 ---
